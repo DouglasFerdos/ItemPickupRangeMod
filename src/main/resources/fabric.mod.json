@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "itempickuprange",
+	"version": "${version}",
+	"name": "itempickuprange",
+	"description": "Mod to customize the minecraft item pickup range!",
+	"authors": [
+		"DouglasFerdos"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/itempickuprange/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.douglasferdos.itempickuprange.Itempickuprange"
+		],
+		"client": [
+			"com.douglasferdos.itempickuprange.ItempickuprangeClient",
+			"com.douglasferdos.itempickuprange.keybinding.ItemPickupKeyBinds"
+		]
+	},
+	"mixins": [
+		"itempickuprange.mixins.json",
+		{
+			"config": "itempickuprange.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

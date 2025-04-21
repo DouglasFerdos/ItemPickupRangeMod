@@ -23,13 +23,12 @@ public class ItemPickupKeyBinds implements ClientModInitializer {
                 );
             }
         });
-
     }
 
     public static KeyBinding keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
             "key.itempickuprange",
             InputUtil.Type.KEYSYM,
-            GLFW.GLFW_KEY_APOSTROPHE,
+            GLFW.GLFW_KEY_UNKNOWN,
             "category.itempickuprange"
     ));
 }

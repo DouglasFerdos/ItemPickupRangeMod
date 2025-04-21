@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.douglasferdos.itempickuprange.Itempickuprange"
+			"com.douglasferdos.itempickuprange.ItemPickupRange"
 		],
 		"client": [
-			"com.douglasferdos.itempickuprange.ItempickuprangeClient",
+			"com.douglasferdos.itempickuprange.ItemPickupRangeClient",
 			"com.douglasferdos.itempickuprange.keybinding.ItemPickupKeyBinds"
 		]
 	},

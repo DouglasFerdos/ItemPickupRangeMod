@@ -1,5 +1,8 @@
 package com.douglasferdos.itempickuprange.configs;
 
 public interface PlayerEntityConfigs {
-    public void setCustomPickUpRange(byte range);
+    void setCustomPickUpRange(byte range);
+    byte getCustomPickUpRange();
+    void togglePickupRange(boolean toggleMod);
+    boolean getTogglePickupRange();
 }
